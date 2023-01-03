@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor - E-commerce product page</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <nav class="nav-container">
+            <nav class="nav-left">
+                <div class="burger">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+                <div class="logo-container">
+                    <img src="./images/logo.svg" alt="logo">
+                </div>
+                <div class="page-mask"></div>
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <p class="nav-link-p"> Collections
+                    </li>
+                    <li class="nav-link">
+                        <p class="nav-link-p"> Men</p>
+                    </li>
+                    <li class="nav-link">
+                        <p class="nav-link-p"> Women</p>
+                    </li>
+                    <li class="nav-link">
+                        <p class="nav-link-p"> About</p>
+                    </li>
+                    <li class="nav-link">
+                        <p class="nav-link-p"> Contact</p>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-right">
+                <div class="cart-container">
+                    <img src="./images/icon-cart.svg" alt="your shopping cart">
+                    <div class="cart__num"></div>
+                </div>
+
+                <div class="profile-container">
+                    <img src="./images/image-avatar.png" alt="">
+                </div>
+            </nav>
+
+        </nav>
+
+    </header>
+
+    <div class="my-cart">
+        <div class="my-cart__h1">
+            <p> Cart</p>
+        </div>
+        <div class="my-cart__items-container">
+
+            <div class="my-cart-not-empty">
+                <div class="thumbnail-container">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+
+                <div class="cart-item-container">
+                    <div class="item-name"> Fall Limited Edition Sneakers
+                    </div>
+
+                    <div class="cart-price">
+
+                    </div>
+                </div>
+
+
+                <div class="delete-container">
+                    <img class="delete-img" src="./images/icon-delete.svg" alt="">
+                </div>
+            </div>
+
+            <div class="my-cart__items">
+                Your cart is empty.
+            </div>
+            <button class="checkout-button"> Checkout
+
+            </button>
+
+
+        </div>
+
+    </div>
+    <main class="main-container">
+        <div class="carousel-container">
+            <div class="carousel">
+
+                <div class="carousel__button-container carousel__button-container--prev is-hidden">
+                    <button class="carousel__button carousel__button--prev">
+                        <img src="./images/icon-previous.svg" alt="">
+                    </button>
+                </div>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide"><img src="./images/image-product-1.jpg" alt=""
+                                class="carousel__image">
+                        </li>
+                        <li class="carousel__slide"><img src="./images/image-product-2.jpg" alt=""
+                                class="carousel__image">
+                        </li>
+                        <li class="carousel__slide"><img src="./images/image-product-3.jpg" alt=""
+                                class="carousel__image">
+                        </li>
+                        <li class="carousel__slide"><img src="./images/image-product-4.jpg" alt=""
+                                class="carousel__image">
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="carousel__button-container carousel__button-container--next">
+                    <button class="carousel__button carousel__button--next">
+                        <img src="./images/icon-next.svg" alt="">
+                    </button>
+                </div>
+
+            </div>
+            <div class="carousel__indicator-container">
+                <div class="carousel__indicator indicator-1 current-slide">
+                    <img class="carousel__indicator--image current-slide" src="./images/image-product-1-thumbnail.jpg"
+                        alt="">
+                </div>
+                <div class="carousel__indicator indicator-1">
+                    <img class="carousel__indicator--image" src="./images/image-product-2-thumbnail.jpg" alt="">
+                </div>
+                <div class="carousel__indicator indicator-1">
+                    <img class="carousel__indicator--image" src="./images/image-product-3-thumbnail.jpg" alt="">
+                </div>
+                <div class="carousel__indicator indicator-1">
+                    <img class="carousel__indicator--image" src="./images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <section class="content-container">
+            <div class="company">
+                <p>SNEAKER COMPANY</p>
+            </div>
+            <div class="h1">
+                <h1>Fall Limitied Edition Sneakers</h1>
+            </div>
+            <div class="description">
+                <p>These low-profile sneaker are your perfect casual wear companion. Featuring a durable rubber outer
+                    sole, they'll withstand everything the weather can offer</p>
+            </div>
+            <div class="pricing">
+                <div class="price-discount-container">
+                    <div class="price">$125.00</div>
+                    <div class="discount">50%</div>
+                </div>
+                <div class="old-price">$250.00</div>
+            </div>
+            <div class="add-to-cart-container">
+                <div class="quantity">
+                    <div class="minus-container">
+                        <img src="./images/icon-minus.svg" alt="">
+                    </div>
+                    <div class="quantity__num"></div>
+                    <div class="plus-container"><img src="./images/icon-plus.svg" alt=""></div>
+                </div>
+                <div class="to-cart">
+                    <div class="to-cart__content">
+                        <div class="cart-container">
+                            <img class="add-to-cart-icon" src="./images/icon-cart-white.svg" alt="">
+                        </div>
+                        <div class="add-to-container">
+                            Add to cart
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
