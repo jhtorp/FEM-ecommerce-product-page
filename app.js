@@ -69,21 +69,6 @@ const showHideArrows = (targetIndex, prevButton, nextButton, slides) => {
     }
 }
 
-nextButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    const currentIndi = indicatorsNav.querySelector('.current-slide');
-    const nextIndi = currentIndi.nextElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === nextSlide);
-
-
-    moveToSlide(track, currentSlide, nextSlide);
-    updateIndicators(currentIndi, nextIndi);
-    showHideArrows(nextIndex, prevButton, nextButton, slides);
-
-});
-
-
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
@@ -99,6 +84,20 @@ prevButton.addEventListener('click', e => {
 
 
 });
+
+nextButton.addEventListener('click', e => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const currentIndi = indicatorsNav.querySelector('.current-slide');
+    const nextIndi = currentIndi.nextElementSibling;
+    const nextIndex = slides.findIndex(slide => slide === nextSlide);
+
+
+    moveToSlide(track, currentSlide, nextSlide);
+    updateIndicators(currentIndi, nextIndi);
+    showHideArrows(nextIndex, prevButton, nextButton, slides);
+});
+
 
 indicatorsNav.addEventListener('click', e => {
     console.log('funker');
@@ -116,6 +115,11 @@ indicatorsNav.addEventListener('click', e => {
     updateIndicators(currentIndi, targetIndi);
     showHideArrows(targetIndex, prevButton, nextButton, slides);
 })
+
+
+
+
+
 
 
 
